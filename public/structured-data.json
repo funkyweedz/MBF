@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Moroccan Builders Foundation",
+  "alternateName": "MBF",
+  "url": "https://mbfinc.vercel.app",
+  "logo": "https://mbfinc.vercel.app/logo512.png",
+  "description": "Discover innovative Moroccan startups and tech projects",
+  "foundingDate": "2024",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "MA",
+    "addressLocality": "Morocco"
+  },
+  "sameAs": [
+    "https://github.com/funkyweedz/MBF"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mbfinc.vercel.app"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://mbfinc.vercel.app/projects",
+    "query-input": "required name=search_term_string"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Moroccan Tech Projects",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "ZeroEntropy",
+          "description": "Advanced AI platform for intelligent data processing",
+          "applicationCategory": "AIApplication"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Go 212",
+          "description": "Electric mobility, eco-friendly laundry, professional cleaning, and home repairs"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SOWIT",
+          "description": "Agricultural technology platform"
+        }
+      }
+    ]
+  }
+}
