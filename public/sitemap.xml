@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mbfinc.vercel.app/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mbfinc.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://mbfinc.vercel.app/" />
-    <image:image>
-      <image:loc>https://mbfinc.vercel.app/logo512.png</image:loc>
-      <image:title>Moroccan Builders Foundation Logo</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://mbfinc.vercel.app/projects</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mbfinc.vercel.app/projects" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://mbfinc.vercel.app/projects" />
   </url>
   <url>
     <loc>https://mbfinc.vercel.app/project/1</loc>
