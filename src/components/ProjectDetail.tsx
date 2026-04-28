@@ -10,7 +10,7 @@ const ProjectDetail: React.FC = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen pt-32 px-4 flex items-center justify-center">
+      <div className="min-h-screen pt-8 px-4 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-mbf-dark-blue mb-4">Project Not Found</h1>
           <Link to="/projects" className="text-mbf-turquoise hover:text-mbf-dark-blue transition-colors">
@@ -34,7 +34,7 @@ const ProjectDetail: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pt-32 px-4 pb-20">
+    <div className="min-h-screen pt-8 px-4 pb-20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
