@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Sparkles, Globe, Code, Brain } from 'lucide-react';
+import { Globe, Code, Brain } from 'lucide-react';
 import ZelligePattern from './ZelligePattern';
 
 const Hero: React.FC = () => {
