@@ -18,7 +18,7 @@ const XIcon = () => (
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[calc(100vh-64px)] flex flex-col items-center justify-center overflow-hidden py-2">
+    <div className="relative h-[calc(100vh-64px)] flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <ZelligePattern className="w-full h-full" />
       </div>
@@ -26,13 +26,13 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 text-center px-4 max-w-4xl mx-auto -mt-8"
+        className="relative z-10 text-center px-4 max-w-3xl mx-auto"
       >
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl font-bold text-mbf-dark-blue mb-0.5 tracking-wide"
+          className="text-2xl md:text-3xl font-bold text-mbf-dark-blue mb-1 tracking-wide"
         >
           Moroccan Builders Foundation
         </motion.h1>
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-base md:text-lg text-mbf-turquoise mb-0.5 font-arabic"
+          className="text-lg md:text-xl text-mbf-turquoise mb-2 font-arabic"
         >
           مؤسسة البنائين المغاربة
         </motion.p>
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-xs text-mbf-text/80 mb-2 max-w-md mx-auto leading-relaxed"
+          className="text-sm text-mbf-text/80 mb-4 max-w-lg mx-auto leading-relaxed"
         >
           Discover and celebrate innovative Moroccan projects that are shaping the future of technology and entrepreneurship in the region.
         </motion.p>
@@ -57,24 +57,24 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="grid grid-cols-3 gap-2 max-w-2xl w-full px-4"
+          className="grid grid-cols-3 gap-3 max-w-2xl w-full px-4"
         >
-          <div className="bg-white/80 backdrop-blur-sm rounded-md p-2 border border-mbf-turquoise/20">
-            <Code className="w-6 h-6 text-mbf-turquoise mx-auto mb-0.5" />
-            <h3 className="text-xs font-semibold text-mbf-dark-blue mb-0">Blockchain</h3>
-            <p className="text-[10px] text-mbf-text/70 leading-tight">Innovative</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
+            <Code className="w-8 h-8 text-mbf-turquoise mx-auto mb-1" />
+            <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">Blockchain</h3>
+            <p className="text-xs text-mbf-text/70">Innovative projects</p>
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm rounded-md p-2 border border-mbf-turquoise/20">
-            <Brain className="w-6 h-6 text-mbf-blue mx-auto mb-0.5" />
-            <h3 className="text-xs font-semibold text-mbf-dark-blue mb-0">AI</h3>
-            <p className="text-[10px] text-mbf-text/70 leading-tight">Solutions</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
+            <Brain className="w-8 h-8 text-mbf-blue mx-auto mb-1" />
+            <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">AI</h3>
+            <p className="text-xs text-mbf-text/70">Smart solutions</p>
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm rounded-md p-2 border border-mbf-turquoise/20">
-            <Globe className="w-6 h-6 text-mbf-orange mx-auto mb-0.5" />
-            <h3 className="text-xs font-semibold text-mbf-dark-blue mb-0">Technology</h3>
-            <p className="text-[10px] text-mbf-text/70 leading-tight">Innovations</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
+            <Globe className="w-8 h-8 text-mbf-orange mx-auto mb-1" />
+            <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">Technology</h3>
+            <p className="text-xs text-mbf-text/70">Digital innovations</p>
           </div>
         </motion.div>
 
@@ -82,11 +82,11 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-3"
+          className="mt-4"
         >
           <Link 
             to="/projects" 
-            className="bg-mbf-turquoise hover:bg-mbf-dark-blue text-white px-4 py-2 rounded-full text-xs font-semibold transition-all transform hover:scale-105 shadow-md inline-block"
+            className="bg-mbf-turquoise hover:bg-mbf-dark-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all transform hover:scale-105 shadow-lg inline-block"
           >
             Explore Projects
           </Link>
@@ -96,14 +96,14 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="mt-3 flex items-center justify-center gap-2"
+          className="mt-4 flex items-center justify-center gap-3"
         >
-          <span className="text-[10px] text-mbf-text/50 mr-1">Follow us:</span>
+          <span className="text-xs text-mbf-text/60 mr-1">Follow us:</span>
           <a
             href="https://www.facebook.com/share/17jwG6JgDv/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-7 h-7 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
             aria-label="Facebook"
           >
             <FacebookIcon />
@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
             href="https://www.linkedin.com/company/morrocan-builders-foundation"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-7 h-7 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
             aria-label="LinkedIn"
           >
             <LinkedInIcon />
@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
             href="https://x.com/MorrocanBuilder"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-7 h-7 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
             aria-label="X"
           >
             <XIcon />
