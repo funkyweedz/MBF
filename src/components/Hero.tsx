@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
             <LinkedInIcon />
           </a>
           <a
-            href="https://x.com/MorrocanBuilder"
+            href="https://x.com/MoroccanBuilder"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-8 h-8 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all"
