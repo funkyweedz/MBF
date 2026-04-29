@@ -6,7 +6,7 @@ import ZelligePattern from './ZelligePattern';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[calc(100vh-100px)] flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative h-[calc(100vh-70px)] flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <ZelligePattern className="w-full h-full" />
       </div>
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 text-center px-4 max-w-2xl mx-auto"
+        className="relative z-10 text-center px-4 max-w-2xl mx-auto -mt-6"
       >
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
@@ -50,19 +50,19 @@ const Hero: React.FC = () => {
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
             <Code className="w-10 h-10 text-mbf-turquoise mx-auto mb-1" />
             <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">Blockchain</h3>
-            <p className="text-xs text-mbf-text/70">Innovative projects</p>
+            <p className="text-xs text-mbf-text/70">Innovative</p>
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
             <Brain className="w-10 h-10 text-mbf-blue mx-auto mb-1" />
             <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">AI</h3>
-            <p className="text-xs text-mbf-text/70">Smart solutions</p>
+            <p className="text-xs text-mbf-text/70">Solutions</p>
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-mbf-turquoise/20">
             <Globe className="w-10 h-10 text-mbf-orange mx-auto mb-1" />
             <h3 className="text-sm font-semibold text-mbf-dark-blue mb-1">Technology</h3>
-            <p className="text-xs text-mbf-text/70">Digital innovations</p>
+            <p className="text-xs text-mbf-text/70">Innovations</p>
           </div>
         </motion.div>
 
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-5"
+          className="mt-4"
         >
           <Link 
             to="/projects" 
