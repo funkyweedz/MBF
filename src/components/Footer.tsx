@@ -3,11 +3,11 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white/80 backdrop-blur-md border-t border-mbf-turquoise/20 py-6 mt-auto">
+    <footer className="bg-white/80 backdrop-blur-md border-t border-mbf-turquoise/20 py-3 mt-auto">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-mbf-text/60 text-sm">
-            © 2024 Moroccan Builders Foundation. All rights reserved.
+            © 2026 Moroccan Builders Foundation. All rights reserved.
           </div>
           
           <div className="flex items-center gap-4">

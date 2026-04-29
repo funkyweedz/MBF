@@ -6,7 +6,7 @@ import ZelligePattern from './ZelligePattern';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[calc(100vh-140px)] flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative h-[calc(100vh-120px)] flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <ZelligePattern className="w-full h-full" />
       </div>
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 text-center px-4 max-w-3xl mx-auto -mt-4"
+        className="relative z-10 text-center px-4 max-w-3xl mx-auto"
       >
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
