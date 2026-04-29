@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
 **SOWIT** - An agricultural technology platform connecting farmers with sustainable solutions and markets.
 
 These projects showcase the incredible innovation coming from Moroccan entrepreneurs. Check them out in our Projects section!`,
-    date: '2024-04-29',
+    date: '2026-04-29',
     author: 'Moroccan Builders Foundation',
     category: 'feature'
   },
@@ -38,7 +38,7 @@ These projects showcase the incredible innovation coming from Moroccan entrepren
 - Every contribution requires review before merging
 
 This ensures that all code changes are properly reviewed and tested before being deployed to the live platform.`,
-    date: '2024-04-29',
+    date: '2026-04-29',
     author: 'Moroccan Builders Foundation',
     category: 'update'
   },
@@ -57,7 +57,7 @@ Moroccan builders and entrepreneurs can now contribute their projects to our pla
 4. Our team will review and merge approved projects
 
 This collaborative approach allows us to build the most comprehensive directory of Moroccan innovation.`,
-    date: '2024-04-29',
+    date: '2026-04-29',
     author: 'Moroccan Builders Foundation',
     category: 'feature'
   },
@@ -75,7 +75,7 @@ This collaborative approach allows us to build the most comprehensive directory 
 - Optimized page titles and descriptions
 
 These enhancements will help more people discover Moroccan innovation through organic search.`,
-    date: '2024-04-28',
+    date: '2026-04-28',
     author: 'Moroccan Builders Foundation',
     category: 'update'
   },
@@ -94,7 +94,7 @@ Our mission is to discover, celebrate, and promote innovative Moroccan projects 
 - A community of Moroccan builders and innovators
 
 We believe in the power of Moroccan entrepreneurship and aim to provide visibility to the incredible work being done by our talented builders.`,
-    date: '2024-04-28',
+    date: '2026-04-28',
     author: 'Moroccan Builders Foundation',
     category: 'announcement'
   }
