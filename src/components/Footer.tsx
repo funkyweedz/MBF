@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Social media icons as SVG components
 
 const Footer: React.FC = () => {
@@ -6,8 +7,16 @@ const Footer: React.FC = () => {
     <footer className="bg-white/80 backdrop-blur-md border-t border-mbf-turquoise/20 py-3 mt-auto">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-mbf-text/60 text-sm">
-            © 2026 Moroccan Builders Foundation. All rights reserved.
+          <div className="flex items-center gap-4">
+            <span className="text-mbf-text/60 text-sm">
+              © 2026 Moroccan Builders Foundation
+            </span>
+            <Link 
+              to="/blog" 
+              className="text-sm text-mbf-turquoise hover:text-mbf-dark-blue transition-colors"
+            >
+              Blog
+            </Link>
           </div>
           
           <div className="flex items-center gap-4">
@@ -32,7 +41,7 @@ const Footer: React.FC = () => {
             </a>
             
             <a
-              href="https://x.com/MorrocanBuilder"
+              href="https://x.com/MoroccanBuilder"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 rounded-full bg-mbf-turquoise/10 text-mbf-turquoise hover:bg-mbf-turquoise hover:text-white transition-all duration-300"
