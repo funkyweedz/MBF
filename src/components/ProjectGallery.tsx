@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
-import { Filter } from 'lucide-react';
+import { Filter, Plus } from 'lucide-react';
 
 const ProjectGallery: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'blockchain' | 'ai' | 'tech'>('all');
@@ -129,6 +129,32 @@ const ProjectGallery: React.FC = () => {
             </p>
           </motion.div>
         )}
+
+        {/* Submit Project CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-12 text-center"
+        >
+          <div className="bg-gradient-to-r from-mbf-turquoise/10 to-mbf-blue/10 rounded-xl p-6 border border-mbf-turquoise/20 max-w-2xl mx-auto">
+            <h3 className="text-lg font-bold text-mbf-dark-blue mb-2">
+              Have a Moroccan project to showcase?
+            </h3>
+            <p className="text-sm text-mbf-text/80 mb-4">
+              Submit your project by creating a Pull Request on GitHub
+            </p>
+            <a
+              href="https://github.com/funkyweedz/MBF/blob/main/CONTRIBUTING.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-mbf-turquoise hover:bg-mbf-dark-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all transform hover:scale-105 shadow-md"
+            >
+              <Plus className="w-4 h-4 mr-2" />
+              Submit Your Project
+            </a>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
