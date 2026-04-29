@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import ProjectGallery from './components/ProjectGallery';
@@ -8,9 +8,6 @@ import ZelligePattern from './components/ZelligePattern';
 import Footer from './components/Footer';
 
 function AppContent() {
-  const location = useLocation();
-  const isHome = location.pathname === '/';
-
   return (
     <div className="relative min-h-screen flex flex-col">
       <div className="fixed inset-0 opacity-5 pointer-events-none">
@@ -24,7 +21,7 @@ function AppContent() {
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
       </div>
-      {!isHome && <Footer />}
+      <Footer />
     </div>
   );
 }
