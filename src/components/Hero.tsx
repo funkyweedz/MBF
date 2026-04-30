@@ -1,12 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Globe, Code, Brain } from 'lucide-react';
 import ZelligePattern from './ZelligePattern';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[calc(100vh-70px)] flex flex-col items-center justify-center overflow-hidden">
+    <>
+      <Helmet>
+        <title>MBF | Moroccan Tech & Startup Showcase - Home</title>
+        <meta name="description" content="Discover and celebrate innovative Moroccan projects that are shaping the future of technology and entrepreneurship in the region. Explore Blockchain, AI, and Technology startups." />
+        <link rel="canonical" href="https://mbfinc.vercel.app/" />
+        <meta property="og:title" content="MBF - Moroccan Builders Foundation | Home" />
+        <meta property="og:description" content="Discover and celebrate innovative Moroccan projects shaping the future of technology and entrepreneurship." />
+        <meta property="og:url" content="https://mbfinc.vercel.app/" />
+        <meta property="twitter:title" content="MBF - Moroccan Builders Foundation | Home" />
+        <meta property="twitter:description" content="Discover and celebrate innovative Moroccan projects shaping the future of technology and entrepreneurship." />
+      </Helmet>
+      <div className="relative h-[calc(100vh-70px)] flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <ZelligePattern className="w-full h-full" />
       </div>
@@ -81,6 +93,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </motion.div>
     </div>
+    </>
   );
 };
 
