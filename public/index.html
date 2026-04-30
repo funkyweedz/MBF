@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#17a2b8" />
     
+    <!-- Security and Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Mobile App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Moroccan Builders" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Moroccan Builders Foundation" />
+    
     <!-- Primary SEO Meta Tags -->
     <title>MBF | Moroccan Tech & Startup Showcase</title>
     <meta name="application-name" content="MBF" />
@@ -13,6 +25,12 @@
     <meta name="keywords" content="Moroccan startups, Morocco tech, Moroccan entrepreneurs, ZeroEntropy, Go 212, SOWIT, Moroccan innovation, African tech startups, Morocco digital transformation, Maghreb tech, Casablanca startups, Moroccan Builders Foundation blog, Morocco tech news, Moroccan entrepreneurship, Morocco AI, Morocco blockchain, Casablanca tech hub, Rabat startups, Marrakech innovation" />
     <meta name="author" content="MBF" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="target" content="all" />
     <link rel="canonical" href="https://mbfinc.vercel.app/" />
     
     <!-- Open Graph / Facebook -->
@@ -44,10 +62,21 @@
     <meta name="geo.position" content="31.7917;-7.0926" />
     <meta name="ICBM" content="31.7917, -7.0926" />
     
-    <!-- Language Alternates -->
+    <!-- Language Alternates with Regions -->
     <link rel="alternate" hreflang="en" href="https://mbfinc.vercel.app/" />
+    <link rel="alternate" hreflang="en-US" href="https://mbfinc.vercel.app/" />
+    <link rel="alternate" hreflang="en-GB" href="https://mbfinc.vercel.app/" />
     <link rel="alternate" hreflang="ar" href="https://mbfinc.vercel.app/" />
+    <link rel="alternate" hreflang="ar-MA" href="https://mbfinc.vercel.app/" />
+    <link rel="alternate" hreflang="fr" href="https://mbfinc.vercel.app/" />
+    <link rel="alternate" hreflang="fr-MA" href="https://mbfinc.vercel.app/" />
     <link rel="alternate" hreflang="x-default" href="https://mbfinc.vercel.app/" />
+    
+    <!-- Resource Hints -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preload" href="%PUBLIC_URL%/logo192.png" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/logo512.png" as="image" />
     
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -55,6 +84,21 @@
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Additional Social Media -->
+    <meta property="og:image:alt" content="Moroccan Builders Foundation Logo" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="article:publisher" content="https://www.facebook.com/share/17jwG6JgDv" />
+    <meta name="twitter:site" content="@MoroccanBuilder" />
+    <meta name="twitter:creator" content="@MoroccanBuilder" />
+    <meta name="twitter:image:alt" content="Moroccan Builders Foundation Logo" />
+    
+    <!-- Pinterest -->
+    <meta name="pinterest" content="nopin" description="Sorry, you can't pin from this website" />
+    
+    <!-- Verification (to be filled) -->
+    <meta name="p:domain_verify" content="" />
+    <meta name="facebook-domain-verification" content="" />
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -157,6 +201,39 @@
           "position": 3,
           "name": "Blog",
           "item": "https://mbfinc.vercel.app/blog"
+        }
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Moroccan Builders Foundation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Moroccan Builders Foundation is a platform dedicated to showcasing innovative Moroccan startups and tech projects in blockchain, AI, and technology sectors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I submit my Moroccan project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can submit your Moroccan project by clicking the Submit Your Project button and creating a Pull Request on our GitHub repository following our contribution guidelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of projects are featured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We feature innovative Moroccan projects in blockchain, artificial intelligence, and general technology sectors. Projects must have a working product or MVP and be founded by Moroccans."
+          }
         }
       ]
     }
