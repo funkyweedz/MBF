@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/mbf-logo.png" 
-              alt="Moroccan Builders Foundation" 
+              alt="MBF - Moroccan Builders Foundation Logo" 
               className="h-28 w-auto object-contain"
             />
           </Link>

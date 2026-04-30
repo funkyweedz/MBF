@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       <div className="relative h-48 overflow-hidden">
         <img 
           src={project.imageUrl} 
-          alt={project.title}
+          alt={`${project.title} - ${project.description}`}
           className="w-full h-full object-contain p-4"
           onError={(e) => {
             const target = e.target as HTMLImageElement;

@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import ProjectGallery from './components/ProjectGallery';
 import ProjectDetail from './components/ProjectDetail';
+import Blog from './components/Blog';
 import ZelligePattern from './components/ZelligePattern';
 import Footer from './components/Footer';
 
@@ -19,6 +21,7 @@ function AppContent() {
           <Route path="/" element={<Hero />} />
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
       <Footer />
@@ -28,9 +31,11 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <AppContent />
+      </Router>
+    </HelmetProvider>
   );
 }
 
