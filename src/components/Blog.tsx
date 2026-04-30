@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { blogPosts, BlogPost } from '../data/blog';
 import { Calendar, User, ArrowLeft, Tag, Newspaper } from 'lucide-react';
 
@@ -20,7 +21,18 @@ const Blog: React.FC = () => {
 
   if (selectedPost) {
     return (
-      <div className="min-h-[80vh] py-8 px-4 pt-8">
+      <>
+        <Helmet>
+          <title>{selectedPost.title} | MBF Blog</title>
+          <meta name="description" content={selectedPost.excerpt} />
+          <link rel="canonical" href={`https://mbfinc.vercel.app/blog#${selectedPost.id}`} />
+          <meta property="og:title" content={selectedPost.title} />
+          <meta property="og:description" content={selectedPost.excerpt} />
+          <meta property="og:url" content={`https://mbfinc.vercel.app/blog#${selectedPost.id}`} />
+          <meta property="twitter:title" content={selectedPost.title} />
+          <meta property="twitter:description" content={selectedPost.excerpt} />
+        </Helmet>
+        <div className="min-h-[80vh] py-8 px-4 pt-8">
         <div className="max-w-3xl mx-auto">
           <motion.button
             initial={{ opacity: 0, x: -20 }}
@@ -69,11 +81,23 @@ const Blog: React.FC = () => {
           </motion.article>
         </div>
       </div>
+      </>
     );
   }
 
   return (
-    <div className="min-h-[80vh] py-8 px-4 pt-8">
+    <>
+      <Helmet>
+        <title>Blog | MBF - Moroccan Tech News & Updates</title>
+        <meta name="description" content="Stay updated with the latest news, features, and improvements to the MBF platform. Read about Moroccan tech innovation and entrepreneurship." />
+        <link rel="canonical" href="https://mbfinc.vercel.app/blog" />
+        <meta property="og:title" content="Blog | MBF - Moroccan Tech News & Updates" />
+        <meta property="og:description" content="Stay updated with the latest news, features, and improvements to the MBF platform." />
+        <meta property="og:url" content="https://mbfinc.vercel.app/blog" />
+        <meta property="twitter:title" content="Blog | MBF - Moroccan Tech News & Updates" />
+        <meta property="twitter:description" content="Stay updated with the latest news, features, and improvements to the MBF platform." />
+      </Helmet>
+      <div className="min-h-[80vh] py-8 px-4 pt-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,6 +161,7 @@ const Blog: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

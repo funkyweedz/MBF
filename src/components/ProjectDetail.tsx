@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { projects } from '../data/projects';
 import { ExternalLink, MessageCircle, Briefcase, ArrowLeft, Star, Camera } from 'lucide-react';
 
@@ -34,7 +35,20 @@ const ProjectDetail: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pt-8 px-4 pb-20">
+    <>
+      <Helmet>
+        <title>{project.title} | MBF - Moroccan Tech Project</title>
+        <meta name="description" content={`${project.description} Founded by ${project.founder}. Explore this innovative ${categoryLabels[project.category]} project from Morocco.`} />
+        <link rel="canonical" href={`https://mbfinc.vercel.app/project/${project.id}`} />
+        <meta property="og:title" content={`${project.title} | MBF - Moroccan Tech Project`} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:url" content={`https://mbfinc.vercel.app/project/${project.id}`} />
+        <meta property="og:image" content={project.imageUrl} />
+        <meta property="twitter:title" content={`${project.title} | MBF - Moroccan Tech Project`} />
+        <meta property="twitter:description" content={project.description} />
+        <meta property="twitter:image" content={project.imageUrl} />
+      </Helmet>
+      <div className="min-h-screen pt-8 px-4 pb-20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +72,7 @@ const ProjectDetail: React.FC = () => {
                 <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-6">
                   <img 
                     src={project.imageUrl} 
-                    alt={project.title}
+                    alt={`${project.title} - ${categoryLabels[project.category]} project by ${project.founder}`}
                     className="w-full h-full object-contain p-6"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
@@ -210,6 +224,7 @@ const ProjectDetail: React.FC = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 

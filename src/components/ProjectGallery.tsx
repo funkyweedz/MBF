@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
 import { Filter, Plus } from 'lucide-react';
@@ -22,7 +23,18 @@ const ProjectGallery: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-[80vh] py-8 px-4 pt-8">
+    <>
+      <Helmet>
+        <title>Projects | MBF - Moroccan Tech & Startup Showcase</title>
+        <meta name="description" content="Explore innovative Moroccan tech projects in Blockchain, AI, and Technology. Discover ZeroEntropy, Go 212, SOWIT and more groundbreaking startups." />
+        <link rel="canonical" href="https://mbfinc.vercel.app/projects" />
+        <meta property="og:title" content="Projects | MBF - Moroccan Tech & Startup Showcase" />
+        <meta property="og:description" content="Explore innovative Moroccan tech projects in Blockchain, AI, and Technology." />
+        <meta property="og:url" content="https://mbfinc.vercel.app/projects" />
+        <meta property="twitter:title" content="Projects | MBF - Moroccan Tech & Startup Showcase" />
+        <meta property="twitter:description" content="Explore innovative Moroccan tech projects in Blockchain, AI, and Technology." />
+      </Helmet>
+      <div className="min-h-[80vh] py-8 px-4 pt-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -157,6 +169,7 @@ const ProjectGallery: React.FC = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 
